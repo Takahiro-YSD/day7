@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ deploy ]
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Check the contents of the file
         uses: actions/checkout@v1
         with:
-          ref: 'master'
+          ref: 'deploy'
 
       - name: Configration on Ubuntu 18.04
         uses: actions/setup-node@v1
@@ -33,7 +33,7 @@ jobs:
         run: |
           yarn install
           yarn generate
-          
+
           
       - name: Push to GitHub
         env:
