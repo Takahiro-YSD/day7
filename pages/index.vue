@@ -5,7 +5,7 @@
       <table class='table table-striped'>
         <thead>
           <tr>
-            <th scope='col'>日程</th>
+            <th scope='col'>日程 </th>
             <th scope='col'>時間</th>
             <th scope='col'>開催地</th>
             <th scope='col'>空席状況</th>
