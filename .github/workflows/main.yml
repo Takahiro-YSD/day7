@@ -43,3 +43,4 @@ jobs:
           git add .
           git commit -m "auto rebuilding site"
           git push -f origin HEAD:master
+          
