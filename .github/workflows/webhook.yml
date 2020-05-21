@@ -1,0 +1,15 @@
+name: webhook
+
+on:
+  repository_dispatch:
+    types: [ build ]
+
+jobs:
+
+  receive_a_webhook:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - name: Check Webhooks
+      run: "echo hello"

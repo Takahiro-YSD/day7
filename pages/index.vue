@@ -28,7 +28,7 @@
 import axios from 'axios'
 export default {
   async asyncData() {
-    const url = encodeURI('https://api.steinhq.com/v1/storages/5ec4f0a583c30d0425e2c388/シート1')
+    const url = encodeURI('https://api.steinhq.com/v1/storages/5ec622bd83c30d0425e2c394/フォームの回答 1')
     const { data } = await axios.get(url)
     return {
       items: data
